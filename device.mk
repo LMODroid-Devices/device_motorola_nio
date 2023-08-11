@@ -12,6 +12,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     FrameworksResNio \
     SystemUIResNio
@@ -25,6 +28,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.device.rc \
     init.recovery.device.rc
+
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml
 
 # NFC
 PRODUCT_PACKAGES += \
