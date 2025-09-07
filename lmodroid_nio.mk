@@ -8,7 +8,7 @@
 $(call inherit-product, device/motorola/nio/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_nio
+PRODUCT_NAME := lmodroid_nio
 PRODUCT_DEVICE := nio
 PRODUCT_MODEL := XT2125-4
 
